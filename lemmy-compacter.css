@@ -1,0 +1,50 @@
+
+/* ==UserStyle==
+@name           compacter lemmy
+@namespace      github.com/openstyles/stylus
+@version        1.0.0
+@description    More compact layout: smaller titles, text, margins, padding
+@author         @northernlights:matrix.lorteau.fr
+==/UserStyle== */
+
+@-moz-document regexp(".*lemmy\..*") {
+    :root {
+        --hlt-body-font-size: 0.8rem;
+    }
+    /* titles */
+    .h5 {
+        font-size: 1rem;
+    }
+    /* central content */
+    .container, .container-fluid, .container-xxl, .container-xl, .container-lg, .container-md, .container-sm {
+        --hlt-gutter-x: 1.5rem;
+        --hlt-gutter-y: 0;
+        width: 100%;
+        padding-right: 1em;
+        padding-left: 1em;
+        margin-right: 0;
+        margin-left: 0;
+        max-width: 100%;
+    }
+    .row {
+        --hlt-gutter-x: 0.4em;
+    }
+    .post-listing {
+        margin: 0 !important;
+        margin-bottom: 0.2rem !important;
+        border-radius: 0.3rem;
+        padding: 0.3rem;
+    }
+    /* side bar cards */
+    .card-body {
+        padding: 0.5em;
+    }
+    /* side bar cards container*/
+    .mb-3 {
+        margin-bottom: 0.2rem !important;
+    }
+    /* main content */
+    .mt-4 {
+        margin-top: 0 !important;
+    }
+}

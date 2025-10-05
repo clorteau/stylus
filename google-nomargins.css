@@ -1,0 +1,15 @@
+
+/* ==UserStyle==
+@name           no-margins-google
+@namespace      github.com/openstyles/stylus
+@version        1.0.0
+@description    No side margins on google news
+@author         @northernlights:matrix.lorteau.fr
+==/UserStyle== */
+
+@-moz-document domain("google.com") {
+    .IKXQhd {
+        width: 99%;
+        max-width: 99%;
+    }
+}
