@@ -1,0 +1,19 @@
+/* ==UserStyle==
+@name           no sidebar lemmy
+@namespace      github.com/openstyles/stylus
+@version        1.0.0
+@description    Hide the side bar on lemmy
+@author         @northernlights:matrix.lorteau.fr
+==/UserStyle== */
+
+@-moz-document regexp(".*lemmy\..*") {
+    /* side bar */
+    .d-md-block {
+        display: none !important;
+    }
+    /* main content */
+    .col-md-8 {
+        width: 100%;
+    }
+}
+

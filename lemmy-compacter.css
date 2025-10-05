@@ -3,7 +3,7 @@
 @name           compacter lemmy
 @namespace      github.com/openstyles/stylus
 @version        1.0.0
-@description    More compact layout: smaller titles, text, margins, padding
+@description    More compact layout: smaller titles, buttons, text, margins, padding
 @author         @northernlights:matrix.lorteau.fr
 ==/UserStyle== */
 
@@ -13,7 +13,7 @@
     }
     /* titles */
     .h5 {
-        font-size: 1rem;
+        font-size: 0.9rem;
     }
     /* central content */
     .container, .container-fluid, .container-xxl, .container-xl, .container-lg, .container-md, .container-sm {
@@ -32,6 +32,7 @@
     .post-listing {
         margin: 0 !important;
         margin-bottom: 0.2rem !important;
+        
         border-radius: 0.3rem;
         padding: 0.3rem;
     }
@@ -46,5 +47,16 @@
     /* main content */
     .mt-4 {
         margin-top: 0 !important;
+    }
+    /* top bar buttons */
+    .btn {
+        --hlt-btn-padding-x: 0.6rem;
+        --hlt-btn-padding-y: 0.25rem;
+        --hlt-btn-font-size: 0.8rem;
+    }
+    /* sorting button */
+    .form-select {
+        font-size: 0.8rem;
+        padding: 0.25rem 1rem 0.25rem 0.4rem;
     }
 }
